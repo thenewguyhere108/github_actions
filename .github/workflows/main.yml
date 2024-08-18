@@ -4,14 +4,11 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - name: Install neofetch
-        run: sudo apt install neofetch -y
-
-      - name: run neofetch
-        run: neofetch
-
+      - name: checkout branch
+        uses: actions/checkout@v4
       - name: show files
         run: ls -la
-
+      - name: Show Readme file
+        run: cat README.md
       - name: Hello World!
         run: echo "Hello World"
