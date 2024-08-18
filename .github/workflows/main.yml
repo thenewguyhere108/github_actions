@@ -18,3 +18,4 @@ jobs:
         run: |
           echo $MESSAGE
           echo ${{ secrets.TEST_PASSWORD }}
+          echo ${{ vars.DOCKER_NAME }}
