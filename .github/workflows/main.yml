@@ -12,3 +12,7 @@ jobs:
         run: cat README.md
       - name: Hello World!
         run: echo "Hello World"
+      - name: Test Environment Variable
+        env:
+          MESSAGE: "Hello this is a environment variable "
+        run: echo $MESSAGE
