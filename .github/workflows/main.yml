@@ -15,4 +15,6 @@ jobs:
       - name: Test Environment Variable
         env:
           MESSAGE: "Hello this is a environment variable "
-        run: echo $MESSAGE
+        run: |
+          echo $MESSAGE
+          echo ${{ secrets.TEST_PASSWORD }}
