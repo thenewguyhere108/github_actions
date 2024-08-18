@@ -1,0 +1,17 @@
+name: Hello World!
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install neofetch
+        run: sudo apt install neofetch -y
+
+      - name: run neofetch
+        run: neofetch
+
+      - name: show files
+        run: ls -la
+
+      - name: Hello World!
+        run: echo "Hello World"
